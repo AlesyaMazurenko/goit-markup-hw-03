@@ -196,7 +196,7 @@ img {
 }
 
 .section {
-  padding: 94px 15px;
+  padding: 94px 0;
 }
 
 /* Заголовки секций */
@@ -238,6 +238,9 @@ img {
 }
 
 /*особенности*/
+.features-list > .item {
+  width: 270px;
+}
 
 .features-list .features-title {
   font-weight: 700;
@@ -305,7 +308,7 @@ img {
 }
 
 div.card-content {
-  padding: 30px 59px;
+  padding: 30px 32px;
   background-color: var(--main-white-color);
 }
 
@@ -315,14 +318,15 @@ div.card-content {
   color: var(--main-white-color);
   padding: 60px 0px;
 }
-
+/* 
 .footer-cont {
-  display: flex;
+  display: block;
   flex-direction: column;
-  justify-content: ;
-}
+  /* justify-content: ; */
+/* } */
 
 .footer-cont > .logo {
+  display: block;
   margin-bottom: 20px;
 }
 .logo-footer {
@@ -331,21 +335,24 @@ div.card-content {
 }
 /* Адрес */
 .address {
-  display: flex;
-  flex-direction: column;
-
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
 }
-
-.addr-item:not(:last-child) {
-  padding-bottom: 9px;
-}
+/* 
+.addr-item {
+  display: block;
+} */
 
 .address-link {
+  display: block;
   color: var(--address-color);
   text-decoration: none;
+}
+
+.address-link:not(:last-child) {
+  margin-top: 9px;
+  margin-bottom: 9px;
 }
 
 .address-link:hover,
@@ -376,7 +383,7 @@ div.card-content {
   border: 4px;
   min-width: 130px;
   text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .portfolio-lst-buttons > .items:not(:last-child) {
@@ -393,7 +400,7 @@ div.card-content {
 
 .portfolio-img > .items {
   margin-right: 30px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .portfolio-item {
@@ -404,7 +411,7 @@ div.card-content {
 
 .portfolio-title {
   display: inline-block;
-  margin: 20px 24px 4px;
+  margin-bottom: 4px;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -414,7 +421,6 @@ div.card-content {
 }
 
 .portfolio-text {
-  margin: 0px 24px 20px 24px;
   font-size: 16px;
   line-height: 1.87;
   color: var(--basic-text-color);
@@ -423,4 +429,5 @@ div.card-content {
 .potfolio-decor {
   border: 1px solid #eeeeee;
   border-top: 0;
+  padding: 20px 24px;
 }
